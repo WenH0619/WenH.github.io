@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WenH0619</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        .box1 {
+            height: 4000px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- header -->
+    <div id="linkTop">
+        <div class="container-fluid fixed-top" style="height: 100px ;  background-color: rgb(52, 70, 112);">
+            <!-- <p class="text-white p-3"> -->
+                <!-- b11035023/吳玟萱/四數媒二a -->
+            <!-- </p> -->
+            
+                <img src="img/btn02.jpg" class="figure-img img-fluid rounded mt-2" style="height: 80% ;">
+            
+        </div>
+
+        <div class="mb-5" style="height: 100px;"></div>
+    </div>
+
+    <!-- body -->
+    <div class="box0" style="background-color:rgb(255, 255, 255)">
+        <!-- 邊緣浮動框的左邊col-11 -->
+        <div class="row">
+            <div class="box1 col-11">
+
+                <!-- 第一部分 -->
+                <div class="container">
+                    <div class="row  row-cols-2">
+
+                        <!-- 跑馬燈 -->
+                        <div class="col-4 p-2 m-2 h-100" style="height: 300px; background-color: rgb(255, 255, 255); ">
+                            <div class="col h-100" style="width: 100%; ">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade"
+                                    data-bs-ride="carousel">
+                                    <!-- carousel-fade照片淡入淡出 -->
+
+                                    <div class="carousel-indicators ">
+                                        <button type="button" data-bs-target="#carouselExampleSlidesOnly"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleSlidesOnly"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleSlidesOnly"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <!-- 會有下面那條白白的 -->
+
+                                    </div>
+                                    <div class="carousel-inner ">
+                                        <!-- data-bs-interval="100" 控制速度 1000等於一秒 -->
+                                        <div class="carousel-item active" data-bs-interval="1200">
+                                            <img src="img/img01.jpg" class="d-block vw-100 img-fluid rounded-3"
+                                                alt="...">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <!-- d-none d-md-block響應式 螢幕太小字會不見 -->
+                                                <h5>01_現在是紅髮吳玟萱</h5>
+                                                <p>b11035023/吳玟萱/四數媒二a</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="600">
+                                            <img src="img/img06.jpg" class="d-block vw-100 img-fluid rounded-3"
+                                                alt="...">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>02_以前是黑髮吳玟萱</h5>
+                                                <p>b11035023/吳玟萱/四數媒二a</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="400">
+                                            <img src="img/img04.jpg" class="d-block vw-100  img-fluid rounded-3"
+                                                alt="...">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>03_有時是褐髮吳玟萱</h5>
+                                                <p>b11035023/吳玟萱/四數媒二a</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 左右移動的按鈕 -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 旁邊的 -->
+                        <div class="col-7 p-2 m-2 h-100" style="height: 400px; background-color: rgb(255, 255, 255); ">
+                            <div class="container ">
+                                <div class="row row-cols-3 g-4">
+                                    <div class="col px-2">
+                                        <div class="card h-100 rounded-3" style="border: 0px;">
+                                            <!-- h-100可以調控整排row的高度一致 -->
+                                            <img class="card-img" src="img/npc07.jpg">
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    <a href="page01.html">這裡可以通往下一頁 </a>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col px-2">
+                                        <div class="card h-100 " style="border: 0px;">
+                                            <img class="card-img" src="img/npc07.jpg">
+                                            <div class="card-body">
+                                                <p class="card-text">我室內文 我室內文 我室內文</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col px-2">
+                                        <div class="card h-100" style="border: 0px;"> <!-- h-100可以調控整排row的高度一致 -->
+                                            <img class="card-img" src="img/npc07.jpg">
+                                            <div class="card-body">
+                                                <p class="card-text">我室內文 我室內文 我室內文</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col px-2">
+                                        <div class="card h-100" style="border: 0px;"> <!-- h-100可以調控整排row的高度一致 -->
+                                            <img class="card-img" src="img/npc07.jpg">
+                                            <div class="card-body">
+                                                <p class="card-text">我室內文 我室內文 我室內文</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col px-2">
+                                        <div class="card h-100" style="border: 0px;"> <!-- h-100可以調控整排row的高度一致 -->
+                                            <img class="card-img" src="img/npc07.jpg">
+                                            <div class="card-body">
+                                                <p class="card-text">我室內文 我室內文 我室內文</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第二部分 -->
+                <div class="container ">
+                    <div class="row row-cols-4 g-4">
+                        <div class="col p-2">
+                            <div class="card h-100"> <!-- h-100可以調控整排row的高度一致 -->
+                                <div class="card-header"> 標頭 </div>
+                                <img class="card-img" src="img/img03.jpg">
+                                <div class="card-body">
+                                    <p class="card-text">我室內文 我室內文 我室內文</p>
+                                </div>
+
+                                <div class="card-footer">
+                                    <a href="#">尾巴</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-2">
+                            <div class="card h-100">
+                                <div class="card-header"> 標頭 </div>
+                                <img class="card-img" src="img/img03.jpg">
+                                <div class="card-body">
+                                    <p class="card-text">我室內文 我室內文 我室內文</p>
+                                </div>
+
+                                <div class="card-footer">
+                                    <a href="#">尾巴</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-2">
+                            <div class="card h-100"> <!-- h-100可以調控整排row的高度一致 -->
+                                <div class="card-header"> 標頭 </div>
+                                <img class="card-img" src="img/img03.jpg">
+                                <div class="card-body">
+                                    <p class="card-text">我室內文 我室內文 我室內文</p>
+                                </div>
+
+                                <div class="card-footer">
+                                    <a href="#">尾巴</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-2">
+                            <div class="card h-100"> <!-- h-100可以調控整排row的高度一致 -->
+                                <div class="card-header"> 標頭 </div>
+                                <img class="card-img" src="img/img03.jpg">
+                                <div class="card-body">
+                                    <p class="card-text">我室內文 我室內文 我室內文</p>
+                                </div>
+
+                                <div class="card-footer">
+                                    <a href="#">尾巴</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-2">
+                            <div class="card h-100"> <!-- h-100可以調控整排row的高度一致 -->
+                                <div class="card-header"> 標頭 </div>
+                                <img class="card-img" src="img/img03.jpg">
+                                <div class="card-body">
+                                    <p class="card-text">我室內文 我室內文 我室內文</p>
+                                </div>
+
+                                <div class="card-footer">
+                                    <a href="#">尾巴</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-2">
+                            <div class="card h-100"> <!-- h-100可以調控整排row的高度一致 -->
+                                <div class="card-header"> 標頭 </div>
+                                <img class="card-img" src="img/img03.jpg">
+                                <div class="card-body">
+                                    <p class="card-text">我室內文 我室內文 我室內文</p>
+                                </div>
+
+                                <div class="card-footer">
+                                    <a href="#">尾巴</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col p-2">
+                            <div class="card h-100"> <!-- h-100可以調控整排row的高度一致 -->
+                                <div class="card-header"> 標頭 </div>
+                                <img class="card-img" src="img/img03.jpg">
+                                <div class="card-body">
+                                    <p class="card-text">我室內文 我室內文 我室內文</p>
+                                </div>
+
+                                <div class="card-footer">
+                                    <a href="#">尾巴</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第三部分打在這喔 -->
+
+            </div>
+
+
+
+
+
+
+            <!-- 浮動框本體 -->
+            <div class="box1 col-1 p-2" style="text-align:right">
+                <div class="card sticky-top border-0"
+                    style="width:80%; height: 200px; background-color: rgb(255, 255, 255);">
+                    <!-- 浮動框移動條 -->
+                    <div class="mb-5" style="height: 1000px; background-color: rgb(255, 255, 255);"></div>
+                    <!-- 讓浮動框不會被上面header卡到的空間 -->
+                    <a class="link-secondary" href="#linkTop">
+                        <img class="card-img" src="img/btn01.jpg">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
