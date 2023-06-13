@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WenH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="/img/HLogo1.ico" type="image/x-icon" />
+    <style>
+        .vision {
+            background-image: url(/img/bg01.jpg);
+            background-attachment: fixed;
+            background-size: 30%;
+
+            /* background-position: 0% 0%; */
+            /* background-repeat: no-repeat; */
+
+
+        }
+
+
+        .illioustation {
+            background-image: url(/img/01-1.jpg);
+            background-attachment: fixed;
+            background-size: auto;
+
+
+
+            /* background-position: 0% 0%; */
+            /* background-repeat: no-repeat; */
+
+        }
+
+        .store {
+            background-image: url(/img/npc07.jpg);
+            background-attachment: fixed;
+            background-size: auto;
+        }
+
+        .store1 {
+            background-image: url(/img/BG02.jpg);
+            background-attachment: fixed;
+            background-size: 50%;
+
+
+        }
+
+        .store2 {
+            background-image: url(/img/store03.png);
+            background-attachment: fixed;
+            background-size: 50%;
+            background-origin: 50%;
+        }
+
+        .store3 {
+            background-image: url(/img/store05.png);
+            background-attachment: fixed;
+            background-size: 50%;
+            background-origin: 50%;
+        }
+
+        /* ::-webkit-scrollbar {
+            display: none;
+        } */
+        /* 兩邊滾動條都隱藏起來 */
+
+        body {
+            overflow-x: hidden;
+            /* 隱藏水平滾動條 */
+            /* overflow-y: scroll; */
+            /* 隱藏垂直滾動條 */
+        }
+
+
+        /* pic控制圖片變大 */
+        .pic {
+            /* width: 500px;
+            height: 350px; */
+            overflow: hidden;
+        }
+
+
+
+        .pic img {
+            transform: scale(1, 1);
+            transition: all 1s ease-out;
+        }
+
+        .pic img:hover {
+            transform: scale(1.3, 1.3);
+        }
+    </style>
+
+
+</head>
+
+
+
+<body style="background-color: rgb(255, 255, 255);">
+
+    <script src="/js/main.js"></script>
+    <!-- header -->
+    <div id="linkTop">
+        <div class="container-fluid fixed-top " style="height: 100px ;  background-color: rgb(52, 70, 112);">
+            <!-- <p class="text-white p-3"> -->
+            <!-- b11035023/吳玟萱/四數媒二a -->
+            <!-- </p> -->
+            <div class="text-center">
+                <div class="d-flex justify-content-center align-items-center mt-4">
+                    <a class="nav-link m-1 link-light" href="#aboutme">ABOUT ME</a>
+                    <div class="d-flex border" style="height: 20px; color: rgb(255, 255, 255);">
+                        <div class="vr"></div>
+                    </div>
+                    <a class="nav-link m-1 link-light" href="#design">DESIGN</a>
+                    <a href="/index.html">
+                        <img src="img/HLogo1.png" class="figure-img img-fluid rounded  mx-3"
+                            style="width: 50px;height: 50px;">
+                    </a>
+                    <a class="nav-link m-1 link-light" href="#illustration">ILLUSTRATION</a>
+                    <div class="d-flex border" style=" height: 20px;color: aliceblue;">
+                        <div class="vr"></div>
+                    </div>
+
+                    <a class="nav-link m-1 link-light" href="#shop">STORE</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-0" style="height: 100px;"></div>
+    </div>
+
+    <!-- body -->
+
+    <div class="box0" style="background-color:rgb(255, 255, 255)">
+        <!-- 邊緣浮動框的左邊col-11 -->
+        <div class="row">
+            <div class="box1 " style="background-color: rgb(52, 70, 112);">
+
+                <!-- 第0部分-主視覺 -->
+                <div class=" vision mx-5 mt-3 p-4" style="height: auto;border-radius: 10px; ">
+                    <div class="position-relative   ">
+                        <div class=" text-center ">
+                            <div class="justify-content-center align-items-center  " style="height: 400px; ;">
+                                <div class="form-control-plaintext position-absolute top-50 start-50 translate-middle"
+                                    ;>
+                                    <span style="font-family:fantasy ;color:rgb(255, 255, 255);
+                                        font-size: 20vmin;  border-color: black;">
+                                        WENH
+                                    </span>
+                                    <br>
+                                    <span style="letter-spacing:0.35em; background-color: rgb(255, 255, 255);"
+                                        class="wixui-rich-text__text rounded-2 "> &emsp;DESIGN. PORTFOLIO .</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- 白底_跑馬燈 sticky-top-->
+                <div class=" my-2 " style="top: 100px; width: 100%;" ;>
+                    <div style="height: 40px ; background-color:rgb(52, 70, 112);" ;>
+                        <!-- 跑馬燈 -->
+                        <!-- &emsp;大空格 &nbsp;小空格 &mdash; 破折號 text-uppercase強制大寫-->
+                        <div class="sticky-top" style=" top: 100px;">
+                            <marquee direction="left" height="60" scrollamount="5" behavior="scroll" loop="infinite">
+                                <p class="form-control-plaintext " style="font-size: 20px; color: rgb(255, 255, 255);"
+                                    ;>
+                                    <span style="font-family:fantasy;">&mdash;&emsp;MAY&nbsp;
+                                        5,&emsp;2023&emsp;&mdash;</span> &emsp;
+                                    <span style="font-family:Lucida Console">WENHSUAN WU</span> &emsp;
+                                    <span style="font-family:fantasy;">&mdash;&emsp;MAY&nbsp;
+                                        5,&emsp;2023&emsp;&mdash;</span> &emsp;
+                                    <span style="font-family:Lucida Console">DESIGNER</span> &emsp;
+                                    <span style="font-family:fantasy;">&mdash;&emsp;MAY&nbsp;
+                                        5,&emsp;2023&emsp;&mdash;</span> &emsp;
+                                    <span style="font-family:Lucida Console">WENHSUAN WU</span> &emsp;
+                                    <span style="font-family:fantasy;">&mdash;&emsp;MAY&nbsp;
+                                        5,&emsp;2023&emsp;&mdash;</span> &emsp;
+                                    <span style="font-family:Lucida Console">DESIGNER</span> &emsp;
+                                    <span style="font-family:fantasy;">&mdash;&emsp;MAY&nbsp;
+                                        5,&emsp;2023&emsp;&mdash;</span> &emsp;
+                                    <span style="font-family:Lucida Console">WENHSUAN WU</span> &emsp;
+                                    <span style="font-family:fantasy;">&mdash;&emsp;MAY&nbsp;
+                                        5,&emsp;2023&emsp;&mdash;</span> &emsp;
+                                    <span style="font-family:Lucida Console">DESIGNER</span> &emsp;
+                                    <span style="font-family:fantasy;">&mdash;&emsp;MAY&nbsp;
+                                        5,&emsp;2023&emsp;&mdash;</span> &emsp;
+                                    <span style="font-family:Lucida Console">WENHSUAN WU</span> &emsp;
+                                    <span style="font-family:fantasy;">&mdash;&emsp;MAY&nbsp;
+                                        5,&emsp;2023&emsp;&mdash;</span> &emsp;
+                                    <span style="font-family:Lucida Console">DESIGNER</span> &emsp;
+                                    <span style="font-family:fantasy;">&mdash;&emsp;MAY&nbsp;
+                                        5,&emsp;2023&emsp;&mdash;</span> &emsp;
+                                    <span style="font-family:Lucida Console">WENHSUAN WU</span> &emsp;
+                                    <span style="font-family:fantasy;">&mdash;&emsp;MAY&nbsp;
+                                        5,&emsp;2023&emsp;&mdash;</span> &emsp;
+                                    <span style="font-family:Lucida Console">DESIGNER</span> &emsp;
+                                    <span style="font-family:fantasy;">&mdash;&emsp;MAY&nbsp;
+                                        5,&emsp;2023&emsp;&mdash;</span> &emsp;
+                                    <span style="font-family:Lucida Console">WENHSUAN WU</span> &emsp;
+                                    <span style="font-family:fantasy;">&mdash;&emsp;MAY&nbsp;
+                                        5,&emsp;2023&emsp;&mdash;</span> &emsp;
+                                    <span style="font-family:Lucida Console">DESIGNER</span> &emsp;
+                                    <span style="font-family:fantasy;">&mdash;&emsp;MAY&nbsp;
+                                        5,&emsp;2023&emsp;&mdash;</span> &emsp;
+                                    <span style="font-family:Lucida Console">WENHSUAN WU</span> &emsp;
+                                    <span style="font-family:fantasy;">&mdash;&emsp;MAY&nbsp;
+                                        5,&emsp;2023&emsp;&mdash;</span> &emsp;
+                                    <span style="font-family:Lucida Console">DESIGNER</span> &emsp;
+                                </p>
+                            </marquee>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 第1部分-關於我 -->
+            <div id="aboutme" class="mb-0" style="height: 100px;"></div>
+            <div class="container  my-2" style="height:auto; background-color: rgb(255, 255, 255);">
+
+                <!-- 相片+自我介紹 -->
+                <div class="p-5 text-center">
+                    <div class="justify-content-center align-items-center"
+                        style="height: 100px ; background-color: rgb(255, 255, 255); " ;>
+                        <p class="form-control-plaintext justify-content-center align-items-center"
+                            style="font-size: 3vw;" ;>
+                            <span style="font-family:Lucida Console;">
+                                &mdash;&emsp;ABOUT&emsp;ME&emsp;&mdash;
+                            </span>
+                    </div>
+                    <!-- 我自己的相片 -->
+                    <img src="/img/img01.jpg" class="img-fluid rounded-circle" style="height: 250px; width: auto;">
+                    <!-- 自我介紹內文 -->
+                    <div class="justify-content-center align-items-center mt-3"
+                        style="height:auto ; background-color: rgb(255, 255, 255); " ;>
+                        <p class="form-control-plaintext justify-content-center align-items-center"
+                            style="font-size: 1.2vw;" ;>
+                            <span style="font-family:Papyrus;">
+                                WenHsuan &nbsp; Wu*-*<br>吳玟萱<br><br>
+                                今年20歲 ，就讀雲林科技大學數位媒體設計系 <br>
+                                喜歡插畫和設計，目前正在嘗試程式 <br>
+                                正朝著製作遊戲的方向努力 <br>
+                                有機會希望能嘗試更多不同的方向<br> <br>
+
+                                閒暇之餘喜愛慢跑&在路邊騎腳踏車散心 <br>
+                                是綠色愛好者， 擁有許多綠色東西ex:衣服<br>
+                                <!-- 但是染了一頭紅髮， 導致有快一半衣服穿不了的人o-o<br> -->
+                            </span>
+
+                            <span style="font-family:Microsoft JhengHei;">
+                                <br>
+                            </span>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- 第2部分-設計 -->
+            <div id="design" class="mb-0" style="height: 100px;"></div>
+            <div class="container  my-2 " style="height: auto; background-color: rgb(255, 255, 255);">
+
+                <div class="position-relative" style="background-color: aliceblue;">
+                    <!-- 大字 -->
+                    <div class=" text-center ">
+                        <div class="justify-content-center align-items-center rounded-3"
+                            style="height: auto ; background-color: rgb(255, 255, 255); " ;>
+                            <p class="form-control-plaintext justify-content-center align-items-center"
+                                style="font-size: 10vmin;" ;>
+                                <span style="font-family:Lucida Console;">
+                                    &mdash;&emsp;DESIGN&emsp;&mdash;
+                                </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- desing part -->
+                <div class="p-2 mt-3">
+                    <div class="container ">
+                        <div class="row row-cols-3">
+                            <div class="col mb-3 ">
+                                <div class="card h-100  "> <!-- h-100可以調控整排row的高度一致 -->
+                                    <img class="card-img " src="/img/design01.jpg">
+
+                                    <div class="card-footer"
+                                        style="background-color: rgb(255, 255, 255); text-align: center;">
+                                        <a href="#">
+                                            <a class=" m-1 link-secondary " style="text-decoration:none; ">
+                                                <span style="font-family:Lucida Console;">view product &rarr;</span>
+                                            </a></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card h-100 "> <!-- h-100可以調控整排row的高度一致 -->
+                                    <img class="card-img" src="/img/design02.jpg">
+
+                                    <!-- <li class="list-group-item" style="text-align: center;">An item</li> -->
+                                    <div class="card-footer"
+                                        style="background-color: rgb(255, 255, 255); text-align: center;">
+                                        <a class=" m-1 link-secondary " style="text-decoration:none; ">
+                                            <span style="font-family:Lucida Console;">view product &rarr;</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card h-100 "> <!-- h-100可以調控整排row的高度一致 -->
+                                    <img class="card-img" src="/img/design03.jpg">
+
+                                    <div class="card-footer"
+                                        style="background-color: rgb(255, 255, 255); text-align: center;">
+                                        <a class=" m-1 link-secondary " style="text-decoration:none; ">
+                                            <span style="font-family:Lucida Console;">view product &rarr;</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col mb-3">
+                                <div class="card h-100 "> <!-- h-100可以調控整排row的高度一致 -->
+                                    <img class="card-img" src="/img/four-15.jpg">
+
+
+                                    <div class="card-footer"
+                                        style="background-color: rgb(255, 255, 255); text-align: center;">
+                                        <a class=" m-1 link-secondary " style="text-decoration:none; ">
+                                            <span style="font-family:Lucida Console;">view product &rarr;</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card h-100 "> <!-- h-100可以調控整排row的高度一致 -->
+                                    <img class="card-img" src="/img/four-16.jpg">
+
+
+                                    <div class="card-footer"
+                                        style="background-color: rgb(255, 255, 255); text-align: center;">
+                                        <a class=" m-1 link-secondary " style="text-decoration:none; ">
+                                            <span style="font-family:Lucida Console;">view product &rarr;</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card h-100 "> <!-- h-100可以調控整排row的高度一致 -->
+                                    <img class="card-img" src="/img/four-17.jpg">
+
+
+                                    <div class="card-footer"
+                                        style="background-color: rgb(255, 255, 255); text-align: center;">
+                                        <a class=" m-1 link-secondary " style="text-decoration:none; ">
+                                            <span style="font-family:Lucida Console;">view product &rarr;</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card h-100 "> <!-- h-100可以調控整排row的高度一致 -->
+                                    <img class="card-img" src="/img/designWord-15.jpg">
+
+
+                                    <div class="card-footer"
+                                        style="background-color: rgb(255, 255, 255); text-align: center;">
+                                        <a class=" m-1 link-secondary " style="text-decoration:none; ">
+                                            <span style="font-family:Lucida Console;">view product &rarr;</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card h-100 "> <!-- h-100可以調控整排row的高度一致 -->
+                                    <img class="card-img" src="/img/designWord-16.jpg">
+
+                                    <div class="card-footer"
+                                        style="background-color: rgb(255, 255, 255); text-align: center;">
+                                        <a class=" m-1 link-secondary " style="text-decoration:none; ">
+                                            <span style="font-family:Lucida Console;">view product &rarr;</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-3">
+                                <div class="card h-100 "> <!-- h-100可以調控整排row的高度一致 -->
+                                    <img class="card-img" src="/img/designWord-17.jpg">
+
+                                    <div class="card-footer"
+                                        style="background-color: rgb(255, 255, 255); text-align: center;">
+                                        <a class=" m-1 link-secondary " style="text-decoration:none; ">
+                                            <span style="font-family:Lucida Console;">view product &rarr;</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center"><button class="rounded-3 border-secondary"
+                        style="background-color: rgb(255, 255, 255); ">
+                        <span style="font-family:Lucida Console;">MORE...&rarr;</span>
+                    </button></div>
+
+
+            </div>
+
+
+            <!-- 第3部分-插畫 -->
+            <div id="illustration" class="mb-0" style="height: 100px;"></div>
+            <div class="position-relative">
+                <!-- 大字 -->
+                <div class=" text-center ">
+                    <div class="justify-content-center align-items-center  illioustation " style="height: 500px;">
+                        <p class="form-control-plaintext position-absolute top-50 start-50 translate-middle" ;>
+                            <span style="font-family:Lucida Console;color: rgb(255, 255, 255);font-size: 10vmin;">
+                                &mdash;&emsp;ILLUSTRATION&emsp;&mdash;
+                            </span>
+                            <br>
+                            <span style="font-family:Lucida Console;color: rgb(255, 255, 255);font-size: 5vmin;">
+                                WENH
+                            </span>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class=" my-2 " style="height: auto; background-color: rgb(255, 255, 255);">
+                <!--插畫主視覺 -->
+                <div class="p-5 ">
+                    <div class="container">
+                        <div class="container  " style=" background-color: rgb(255, 255, 255); height: auto;">
+
+                            <!-- 插畫主視覺-->                          
+                            <div class="p-5 ">
+                                <div class="container">
+                                    <div class="container  position-relative"
+                                        style=" background-color: rgb(255, 255, 255); height: auto;">
+                                        <div class="row  row-cols-2 justify-content-center">
+                                            <!-- 插畫主視覺-->
+                                            <div class="col-7 p-2 m-0 h-100 "
+                                                style="height: auto; background-color: rgb(255, 255, 255); ">
+                                                <div class="col h-100" style="width: 100%; ">
+
+                                                    <div class="row row-cols-1">
+                                                        <div class="col-12">
+                                                            <div class="card h-100"> <!-- h-100可以調控整排row的高度一致 -->
+                                                                <img class="card-img" src="/img/01.jpg">
+                                                                <div class="card-footer"
+                                                                    style="background-color: rgb(255, 255, 255); text-align: center;">
+                                                                    <a class=" m-1 link-secondary "
+                                                                        style="text-decoration:none; ">
+                                                                        <span style="font-family:Lucida Console;">View
+                                                                            More
+                                                                            &rarr;</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <!-- 旁邊的 -->
+                                            <div class="col-5 p-2 m-0 h-100 "
+                                                style="height:auto; background-color: rgb(255, 255, 255); ">
+                                                <div class="container text-center">
+                                                    <div class="row row-cols-1 g-4">
+                                                        <div class="col-2"></div>
+                                                        <div class="col-9 px-2">
+                                                            <div class="card h-100 rounded-3" style="border: 0px;">
+                                                                <!-- h-100可以調控整排row的高度一致 -->
+                                                                <img class="card-img" src="img/02.jpg">
+                                                                <div class="card-footer"
+                                                                    style="background-color: rgb(255, 255, 255); text-align: center;">
+                                                                    <a class=" m-1 link-secondary "
+                                                                        style="text-decoration:none; ">
+                                                                        <span
+                                                                            style="font-family:Lucida Console;">Nightmare
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2"></div>
+                                                        <div class="col-9 px-2">
+                                                            <div class="card h-100 " style="border: 0px;">
+                                                                <img class="card-img" src="img/03.jpg">
+                                                                <div class="card-footer"
+                                                                    style="background-color: rgb(255, 255, 255); text-align: center;">
+                                                                    <a class=" m-1 link-secondary "
+                                                                        style="text-decoration:none; ">
+                                                                        <span
+                                                                            style="font-family:Lucida Console;">Nightmare
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+             
+
+
+                <!-- wh風格人物家族部分 -->
+                <div class="p-5">
+                    <div class="container">
+                        <div class="row row-cols-4">
+                            <div class="col">
+                                <div class="card h-100"> <!-- h-100可以調控整排row的高度一致 -->
+                                    <img class="card-img" src="/img/people2.png">
+                                    <div class="card-body">
+                                        <p class="card-text"
+                                            style="font-family:Lucida Console; color: rgb(136, 140, 189);">v20220207
+                                        </p>
+                                    </div>
+
+                                    <div class="card-footer"
+                                        style="background-color: rgb(255, 255, 255); text-align: center;">
+                                        <a class=" m-1 link-secondary " style="text-decoration:none; ">
+                                            <span style="font-family:Lucida Console;">WH_StylePeople
+                                                &rarr;</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100"> <!-- h-100可以調控整排row的高度一致 -->
+                                    <img class="card-img" src="/img/people3.png">
+                                    <div class="card-body">
+                                        <p class="card-text"
+                                            style="font-family:Lucida Console; color: rgb(150, 139, 104);">v20220514
+                                        </p>
+                                    </div>
+
+                                    <div class="card-footer"
+                                        style="background-color: rgb(255, 255, 255); text-align: center;">
+                                        <a class=" m-1 link-secondary " style="text-decoration:none; ">
+                                            <span style="font-family:Lucida Console;">WH_StylePeople
+                                                &rarr;</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100"> <!-- h-100可以調控整排row的高度一致 -->
+                                    <img class="card-img" src="/img/people4.png">
+                                    <div class="card-body">
+                                        <p class="card-text"
+                                            style="font-family:Lucida Console; color: rgb(228, 163, 98);">v20220927
+                                        </p>
+                                    </div>
+
+                                    <div class="card-footer"
+                                        style="background-color: rgb(255, 255, 255); text-align: center;">
+                                        <a class=" m-1 link-secondary " style="text-decoration:none; ">
+                                            <span style="font-family:Lucida Console;">WH_StylePeople
+                                                &rarr;</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100"> <!-- h-100可以調控整排row的高度一致 -->
+                                    <img class="card-img" src="/img/people5.png">
+                                    <div class="card-body">
+                                        <p class="card-text"
+                                            style="font-family:Lucida Console; color: rgb(164, 136, 189);">v20221004
+                                        </p>
+                                    </div>
+
+                                    <div class="card-footer"
+                                        style="background-color: rgb(255, 255, 255); text-align: center;">
+                                        <a class=" m-1 link-secondary " style="text-decoration:none; ">
+                                            <span style="font-family:Lucida Console;">WH_StylePeople
+                                                &rarr;</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+            <!-- 第4部分-商店 -->
+
+            <div id="shop" class="mb-0" style="height: 100px;"></div>
+            <div class=" position-relative" style="height: auto; background-color: rgb(255, 255, 255);">
+                <!-- 大字 -->
+                <div class="position-relative " style="background-color: rgb(255, 255, 255);">
+                    <div class=" text-center ">
+                        <div class="justify-content-center align-items-center  illioustation " style="height: 500px;">
+                            <p class="form-control-plaintext position-absolute top-50 start-50 translate-middle" ;>
+                                <span style="font-family:Lucida Console;color: rgb(255, 255, 255);font-size: 10vmin;">
+                                    &mdash;&emsp;STORE&emsp;&mdash;
+                                </span>
+                                <br>
+                                <span style="font-family:Lucida Console;color: rgb(255, 255, 255);font-size: 5vmin;">
+                                    WENH
+                                </span>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 非禮勿視 -->
+                <div class="shop2 m-5 rounded-3 shadow" style="background-color: rgb(34, 39, 53); height: auto;">
+                    <div class="row row-cols-2">
+
+                        <!-- 左邊 -->
+                        <div class="col-7 pe-0">
+                            <div class="card h-100 store1" style="background-color: rgb(146, 174, 200);">
+                                <!-- h-100可以調控整排row的高度一致 -->
+                                <div class="text-center pic">
+                                    <img class="card-img m-3 " src="/img/store02.png" style="width: 65%;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 右邊 -->
+                        <div class="col-5 px-0  d-flex justify-content-center " style="align-items: center;">
+                            <p class="m-5">
+                                <span style="font-family:Papyrus; font-size: 1.2vw; color: rgb(255, 255, 255);  ">
+                                    最近廢棄醫院傳聞失蹤人口❓
+                                    警方為了調查廢棄醫院，不慎落入敵人的手
+                                    中，原以為身亡的員警，卻奇蹟似的吊著一口氣再次睜開了眼睛...
+                                    請在不被發現的狀態下，收集情報並逃離醫院，否則....這次必死無疑。<br> <br>
+                                </span>
+                                <span style="font-family:Papyrus;  font-size: 1vw; color: rgb(166, 166, 166);">
+                                    遊戲名稱:非禮勿視 /
+                                    語言:中文<br>
+                                    遊戲類型:恐怖遊戲、冒險、第一人稱視角、 2D、解謎 <br>
+                                    製作日期:2022/12/26<br>
+                                    製作人員:吳玟萱 、吳昀珏、張宸瑄、張健偉<br><br>
+                                </span>
+
+
+                                <a href="index.html" class=" m-1 link-light "
+                                    style="text-decoration:none; text-align: center;">
+                                    <span style="font-family:Lucida Console;">view product &rarr;</span>
+                                </a>
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 治癒遊系 -->
+                <div class="shop2 m-5 rounded-3 shadow" style="background-color: rgb(255, 255, 255); height: auto;">
+
+                    <div class="row row-cols-2 ">
+
+                        <!-- 左邊 -->
+                        <div class="col-7 pe-0">
+                            <div class="card h-100 store2 " style="background-color: rgb(255, 255, 255);">
+                                <!-- h-100可以調控整排row的高度一致 -->
+                                <div class="text-center pic">
+                                    <img class="card-img m-3 " src="/img/store04.png" style="width: 65%;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 右邊 -->
+                        <div class="col-5 px-0  d-flex justify-content-center" style="align-items: center;">
+                            <p class="m-5">
+                                <span style="font-family:Papyrus; font-size: 1.2vw; color: rgb(174, 28, 79);  ">
+                                    CURABIE是一款療癒人心的遊戲，
+                                    在這個步調迅速的資訊時代裡，
+                                    讓我們可以暫時放下現實世界中的包袱，
+                                    在這裡可以享受自由的步調，
+                                    養成類遊戲。<br> <br>
+                                </span>
+                                <span style="font-family:Papyrus;  font-size: 1vw; color: rgb(166, 166, 166);">
+                                    遊戲名稱: CURABIE/
+                                    語言:中文<br>
+                                    遊戲類型:治癒、可愛、養成、 2D <br>
+                                    製作日期:2022/05/23<br>
+                                    製作人員:吳玟萱 、陳畇蓁<br><br>
+                                </span>
+                                <a href="indexcur.html" class=" m-1 link-danger " style="text-decoration:none; ">
+                                    <span style="font-family:Lucida Console;">view product &rarr;</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 花店 -->
+                <div class="shop2 m-5 rounded-3 shadow" style="background-color: rgb(255, 255, 255); height: auto;">
+                    <div class="row row-cols-2 ">
+                        <!-- 左邊 -->
+                        <div class="col-7 pe-0">
+                            <div class="card h-100 store3 " style="background-color: rgb(255, 255, 255);">
+                                <!-- h-100可以調控整排row的高度一致 -->
+                                <div class="text-center pic">
+                                    <img class="card-img m-3 " src="/img/store06.png" style="width: 65%;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 右邊 -->
+                        <div class="col-5 px-0  d-flex justify-content-center" style="align-items: center;">
+                            <p class="m-5">
+                                <span style="font-family:Papyrus; font-size: 1.2vw; color: rgb(127, 52, 128);  ">
+                                    一間在隱蔽的巷弄的復古乾燥花店 <br>
+                                    將珍視的記憶與時光封存於花束中
+                                    <br>
+                                </span>
+                                <span style="font-family:Papyrus;  font-size: 1vw; color: rgb(166, 166, 166);">
+                                    - 我們可能會遺忘，但乾燥花將永存 -<br><br>
+                                </span>
+                                <a href="indexfla.html" class=" m-1 link-warning " style="text-decoration:none; ">
+                                    <span style="font-family:Lucida Console;">view product &rarr;</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 隔開最下面那層 -->
+                <div style="height: 100px;"></div>
+
+
+
+
+
+
+
+                <!-- &emsp;大空格 &nbsp;小空格 &mdash; 破折號 text-uppercase強制大寫-->
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <!-- 浮動框本體 -->
+        <div class="box1  p-4  fixed-bottom " style="text-align:right ; direction: rtl; margin-bottom: 7%;">
+            <!-- 浮動框移動條 -->
+
+            <a href="#linkTop">
+                <img class="card-img" src="img/v04_UiWebPng/ui_up-04.png" style="height: 6%; width: 6%;">
+            </a>
+
+        </div>
+        <div class="box1  p-4  fixed-bottom " style="text-align:right ; direction: rtl; ">
+            <a class="link-secondary " href="#linkdown">
+                <img class="card-img" src="img/v04_UiWebPng/ui_down-04.png" style="height: 6%; width: 6%;">
+            </a>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- 最後部分-尾聯絡我 -->
+    <div id="linkdown" class="container-fluid  mt-5" style="height: auto; background-color: rgb(255, 255, 255);">
+        <div class="container position-relative">
+            <hr style="size:8px ; width:100%">
+            <!-- 大字 -->
+            <div class=" text my-4">
+                <div class="justify-content-center align-items-center rounded-3" style="height: auto ;  " ;>
+                    <p class="form-control-plaintext justify-content-center align-items-center "
+                        style="font-size: 4vmin;" ;>
+                        <span style="font-family:Lucida Console; color: rgb(88, 88, 88); ">
+                            C&emsp;O&emsp;N&emsp;T&emsp;A&emsp;C&emsp;T<br>
+                        </span>
+
+                        <!-- <span style=" color: rgb(88, 88, 88); font-size: 4vw;">
+                           &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;                 
+                        </span>  -->
+                        <!-- &emsp;大空格 &nbsp;小空格 &mdash; 破折號 text-uppercase強制大寫-->
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row  g-3">
+
+                <div class="col-1 h-100">
+                    <div class="col-1">
+                        <div class="card" style="width: 3rem; border: none;">
+                            <a href="https://www.facebook.com/profile.php?id=100009829001965">
+                                <img src="/img/v04_UiWebPng/ui_fb-04.png" class="card-img-top" alt="fb"></a>
+                            <div class="card-body text-center h-100">
+                                <!-- <p class="card-text">fb</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card" style="width: 3rem; border: none;">
+                            <a href="https://line.me/zh-hant/">
+                                <img src="/img/v04_UiWebPng/ui_line-04.png" class="card-img-top" alt="line"></a>
+                            <div class="card-body text-center h-100">
+                                <!-- <p class="card-text">fb</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card" style="width: 3rem; border: none;">
+                            <a href="https://instagram.com/ibuki_wh_06_19?igshid=
+                            MmJiY2I4NDBkZg==">
+                                <img src="/img/v04_UiWebPng/ui_ig-04.png" class="card-img-top" alt="ig"></a>
+                            <div class="card-body text-center h-100">
+                                <!-- <p class="card-text">fb</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="card" style="width: 3rem; border: none;">
+                            <img src="/img/v04_UiWebPng/ui_list-04.png" class="card-img-top" alt="none">
+                            <div class="card-body text-center h-100">
+                                <!-- <p class="card-text">fb</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-4">
+                    <div class="row row-cols-2 ">
+
+                        <div class="col h-100">
+                            <span style="font-family: Lucida Console; font-size: 3vmin;">
+                                FOLLOW&nbsp;US<br><br>
+                            </span>
+                            <span style="font-family: Lucida Console;font-size: 2vmin;">
+                                <br>Facebook &nbsp;<br><br>Line<br><br>Instagram<br><br>
+                            </span>
+                        </div>
+                        <div class="col h-100">
+                            <div style="border-left: 1px solid black; height: 300px"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-4">
+                    <div class="row row-cols-2 ">
+                        <div class="col h-100">
+                            <span style="font-family: Lucida Console; font-size: 3vmin;">
+                                MENU<br><br>
+                            </span>
+                            <span style="font-family: Lucida Console;font-size: 2vmin;">
+                                <br>About &nbsp;me<br><br>Desige<br><br>Illustration<br><br>Store<br>
+                            </span>
+                        </div>
+                        <div class="col h-100">
+                            <div style="border-left: 1px solid black; height: 300px"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-1"> </div>
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+
+</html>
