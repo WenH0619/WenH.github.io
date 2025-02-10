@@ -8,13 +8,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 20px;
-            background-size: auto 100%;
+            /* margin: 20px; */
             background-position: center;
             transition: 0.5s ease;
+            background-size: auto 100%;
+            /* 強制填滿視窗 */
+            background-repeat: repeat;
+            height: 100vh;
+            /* overflow-y: hidden;
+            overflow-x: hidden; */
+
         }
 
         #quiz-container,
@@ -24,7 +34,7 @@
 
         /* 選項 */
         #options-container button {
-            margin: 5px;
+            margin: 2px;
             font-size: 16px;
             cursor: pointer;
             display: flex;
@@ -40,14 +50,14 @@
         }
 
         #result-container {
-            margin-top: 20px;
+            /* margin-top: 20px; */
         }
 
         #progress-bar-container {
             width: 100%;
             background-color: #f3f3f3;
             height: 20px;
-            margin: 7% 0;
+            margin: 1% 0;
             display: none;
             /* Hide progress bar initially */
         }
@@ -62,28 +72,38 @@
         #options-container img {
             display: block;
             margin: 0 auto;
-            width: 45%;
+            width: 25%;
             height: auto;
 
         }
 
         /* 控制  問題  圖片尺寸 */
         #question-image {
-            max-width: 40%;
-            margin-bottom: 20px;
+            max-width: 25%;
+            margin-bottom: 0px;
         }
+
+
+
+
 
         /* 控制  測驗結果  圖片尺寸 */
         #result-image {
-            max-width: 40%;
+
+            height: 50%;
+
+            height: 90vh;
         }
 
+
+
         /* 響應式圖片改變尺寸_手機 */
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
 
             /* 控制  開頭  圖片尺寸 */
             #startbutton01 {
                 width: 80% !important;
+               
             }
 
             #startbutton02 {
@@ -111,7 +131,7 @@
             }
 
             #progress-bar-container {
-                margin: 15% 0;
+                margin: 10% 0;
             }
 
         }
@@ -124,21 +144,21 @@
         crossorigin="anonymous"></script>
     <!-- 測驗封面 -->
     <div class="container">
-        <img id="startbutton01" src="img/封面/封面_logo.png" style="width: 30%;">
+        <img id="startbutton01" src="img/封面/封面_logo.png" style="width: 20%; margin: 1%; margin-top: 3%;">
     </div>
     <div class="container2">
-        <img id="startbutton02" src="img/封面/封面_圖.png" style="width: 30%;">
+        <img id="startbutton02" src="img/封面/封面_圖.png" style="width: 23%;margin: 1%;">
     </div>
 
     <!-- 開始按鈕 -->
     <button id="start-button" onclick="startQuiz()">
-        <img id="startbutton03" src="img/封面/封面_按鈕.png" style="width: 20%;">
+        <img id="startbutton03" src="img/封面/封面_按鈕.png" style="width: 14%;margin: 1%;">
     </button>
 
     <!-- 問題容器 -->
     <div id="quiz-container">
         <h2 id="question-text"></h2>
-        <img id="question-image" src="" alt="問題圖片">
+        <img id="question-image" src="">
         <div id="options-container"></div>
     </div>
 
@@ -167,6 +187,14 @@
             document.getElementById("start-button").style.display = "none";
             document.getElementById("quiz-container").style.display = "block";
             document.getElementById('progress-bar-container').style.display = 'block';
+            document.body.style.backgroundImage = "none";
+
+
+
+
+
+
+
             // 顯示第一個問題
             updateQuestion();
         }
