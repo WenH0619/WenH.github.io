@@ -40,13 +40,13 @@
             display: flex;
             align-items: center;
             /* 線框 */
-            background: rgba(255, 255, 2255, 0.5);
-            border: rgba(255, 255, 2255, 0.5);
+            background: rgba(255, 255, 2255, 0.0);
+            border: rgba(255, 255, 2255, 0.0);
         }
 
         #start-button {
-            background: rgba(255, 255, 2255, 0.5);
-            border: rgba(255, 255, 2255, 0.5);
+            background: rgba(255, 255, 2255, 0.0);
+            border: rgba(255, 255, 2255, 0.0);
         }
 
        
@@ -105,11 +105,17 @@
             }
 
             #startbutton02 {
-                width: 80% !important;
+                width: 102% !important;
+                padding-right: 7%;
+                padding-left: -1%;
+                margin-top: 5% !important;
             }
 
             #startbutton03 {
-                width: 90% !important;
+                width: 60% !important;
+                margin-bottom: 15% !important;
+                margin-top: -7% !important;
+                
             }
 
             /* 控制  選項  圖片尺寸 */
@@ -142,15 +148,15 @@
         crossorigin="anonymous"></script>
     <!-- 測驗封面 -->
     <div class="container">
-        <img id="startbutton01" src="img/封面/封面_logo.png" style="width: 20%; margin: 1%; margin-top: 3%;">
+        <!-- <img id="startbutton01" src="img/封面/封面_logo.png" style="width: 20%; margin: 1%; margin-top: 3%;"> -->
     </div>
-    <div class="container2">
-        <img id="startbutton02" src="img/封面/封面_圖.png" style="width: 23%;margin: 1%;">
+    <div class="container2" >
+        <img id="startbutton02" src="img/封面/封面_圖.png" style="width: 23% ; margin-top: 2%; ">
     </div>
 
     <!-- 開始按鈕 -->
-    <button id="start-button" onclick="startQuiz()">
-        <img id="startbutton03" src="img/封面/封面_按鈕.png" style="width: 30%;margin: 1%;">
+    <button id="start-button" onclick="startQuiz()" >
+        <img id="startbutton03" src="img/封面/封面_按鈕.png" style="width: 30%;  margin-bottom: 10%; ">
     </button>
 
     <!-- 問題容器 -->
@@ -665,11 +671,15 @@
             //結尾
             {
                 image: "img/結束/結束_文字.png",
-                background: "img/結束/結束_背景.png",
+                background: "img/結束/結束_背景.png" ,
+                imageStyle: {
+                   },
+                
                 options: [
                     {
                         // text: "開始摸索",
                         image: "img/結束/結束_按鈕.png",
+                       
                         action: () => {
                             start[0] += 1;
                         }
